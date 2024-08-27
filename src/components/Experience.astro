@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "2023-2024",
+    title: "Desarrollador de software - Getronics",
+    description:
+      "Programador en practicas en Getronics, asignado al CETSE, he utilizado Selenium, Java y JavaScript de forma extensiva para realizar pruebas de aseguramiento de la calidad y su mantenimiento (QA). He contribuido activamente al desarrollo de soluciones innovadoras. Esta experiencia práctica no sólo ha mejorado mi competencia técnica en programación, sino que también ha agudizado mi aptitud de colaboración, lo que me permite prosperar en entornos de equipo.",
+  },
+  {
+    date: "2022-2024",
+    title:
+      "Grado Superior en Desarrollo de Aplicaciones Multiplataforma - Cesur Plaza Elíptica",
+    description:
+      "Durante mis estudios en Desarrollo de Aplicaciones Multiplataforma (DAM), adquirí una sólida base en el diseño y desarrollo de software para diversos dispositivos. Aprendí a programar en lenguajes como Java, Kotlin, HTML y CSS, enfocándome en el desarrollo de aplicaciones en entornos Android. También me especialicé en bases de datos, trabajando con MySQL para la gestión y manipulación de datos. Además, durante un breve periodo, aprendí los fundamentos de Python, ampliando mis capacidades en el ámbito del desarrollo.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3.5">
+  {
+    EXPERIENCE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
