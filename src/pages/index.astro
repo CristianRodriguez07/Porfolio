@@ -8,7 +8,14 @@ import GitHubIcon from "../components/Icons/GitHub.astro";
 import GmailIcon from "../components/Icons/Gmail.astro";
 import Experience from "../components/Experience.astro";
 import CodeIcon from "../components/Icons/Code.astro";
-import DeviceLaptopIcon from "../components/Icons/DeviceLaptop.astro";
+import RobotIcon from "../components/Icons/Robot.astro";
+import BoltIcon from "../components/Icons/Bolt.astro";
+import JavaScriptIcon from "../components/Icons/JavaScript.astro";
+import JavaIcon from "../components/Icons/Java.astro";
+import MySQLIcon from "../components/Icons/MySQL.astro";
+import PythonIcon from "../components/Icons/Python.astro";
+import HTMLIcon from "../components/Icons/HTML.astro";
+import CSSIcon from "../components/Icons/CSS.astro";
 ---
 
 <Layout
@@ -56,20 +63,25 @@ import DeviceLaptopIcon from "../components/Icons/DeviceLaptop.astro";
         </SocialPill>
       </nav>
     </SectionContainer>
-    <SectionContainer id="Sobre mí">
+    <SectionContainer id="sobre-mi">
       <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
-        <DeviceLaptopIcon class="size-8" />
+        <RobotIcon class="size-8" />
         Sobre mí
       </h2>
-      <p
-        class="mb-4 text-base font-normal text-blue-200 opacity-70 text-pretty"
-      >
-        Programador junior, junto con conocimientos en programación Java, BBDD y
-        desarrollo web con HTML/CSS y JavaScript. Alta capacidad y motivación de
-        aprendizaje rápido, trabajo en equipo al igual que individual,
-        resolución de problemas con sólidos conocimientos técnicos,
-        adaptabilidad a nuevas tecnologías y gran organización del trabajo,
-        contribuyendo al desarrollo de soluciones tecnológicas de alta calidad.
+      <p class="mb-4 text-xl font-normal text-blue-200 opacity-70 text-pretty">
+        Mi nombre es Cristian Rodríguez. Si bien estoy dando mis primeros pasos
+        en el ámbito de la programación, mi trayectoria en el mundo de la
+        tecnología ha sido constante. Soy un entusiasta apasionado por este
+        sector y todo lo que representa. Me encuentro en un proceso de
+        aprendizaje continuo, adaptándome y creciendo a medida que la tecnología
+        avanza, con el objetivo de estar siempre a la vanguardia de las últimas
+        tendencias e innovaciones.
+      </p>
+      <p class="mb-4 text-xl font-normal text-red-200 opacity-70 text-pretty">
+        Mi objetivo es contribuir de manera significativa a la innovación
+        tecnológica, aplicando mis conocimientos y desarrollando habilidades que
+        me permitan ser parte activa de los cambios y avances que están
+        transformando el futuro.
       </p>
     </SectionContainer>
     <SectionContainer id="experiencia">
@@ -78,6 +90,38 @@ import DeviceLaptopIcon from "../components/Icons/DeviceLaptop.astro";
         Mi experiencia
       </h2>
       <Experience />
+      <SectionContainer />
+      <SectionContainer id="skills" />
+      <h2 class="text-2xl font-semibold mb-4 flex gap-x-3 items-center">
+        <BoltIcon class="size-8" />
+        Skills
+      </h2>
+      <nav class="flex gap-3 mt-6 flex-wrap">
+        <SocialPill>
+          <JavaScriptIcon class="size-4 md:size-6" />
+          JavaScript
+        </SocialPill>
+        <SocialPill>
+          <JavaIcon class="size-4 md:size-6" />
+          Java
+        </SocialPill>
+        <SocialPill>
+          <MySQLIcon class="size-4 md:size-6" />
+          MYSQL
+        </SocialPill>
+        <SocialPill>
+          <PythonIcon class="size-4 md:size-6" />
+          Python
+        </SocialPill>
+        <SocialPill>
+          <HTMLIcon class="size-4 md:size-6" />
+          HTML
+        </SocialPill>
+        <SocialPill>
+          <CSSIcon class="size-4 md:size-6" />
+          CSS
+        </SocialPill>
+      </nav>
     </SectionContainer>
   </main>
 </Layout>
